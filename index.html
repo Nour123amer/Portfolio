@@ -1,316 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Nour Amer</title>
-  </head>
-  <body class="position-relative">
-    <!-- header -->
-    <header>
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-transparent py-5">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Nour Amer - Frontend Developer</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
-          <a class="navbar-brand fs-2" href="#">Nour Amer</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="fs-5 nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="fs-5 nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="fs-5 nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="fs-5 nav-link" href="#team">Team & Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="fs-5 nav-link" href="#skills">Skills</a>
-              </li>
-             
-              <li class="nav-item">
-                <a class="fs-5 nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <div class="container pt-5">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="flex justify-content-center align-items-center p-5 txt-content">
-              <p class="text-white fs-4 p-5 ">
-                Frontend developer graduated from the faculty of management
-                technology and information system ( technology and information
-                system department) . My goal is to find an internship or a job
-                that help me to improve my level in the web development.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 rounded-5">
-            <img class="me-img" src="imgs/me2.jpeg" alt="" />
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- About section -->
-    <section class="py-5" id="about">
-      <h2 class="text-center heading-style">About</h2>
-     
-      <div class="container mt-5 p-4 text-slide-in">
-        <div class="row gy-5">
-          <div class="col-sm-12 col-md-6 col-lg-6 p-5">
-              <h3>About Me</h3>
-              <p class="fs-5">
-                Fresh graduate seeking a role as a frontend developer (React - Next.js).
-               using HTML ,CSS ,Bootstrap ,Javascript ,Jquery ,Restful API , Graphql ,tailwind ,shadcn ui for styling.
-               implement responsive and intuitive user interfaces by coverting figma designs into real projects,
-               Writing clean, modular, and reusable code following industry best practices, have the ability to work with a team.
-              </p>
-      
-            <button type="button" class="btn btn-outline-danger about-btn">
-              <span>ABOUT Me</span>
+            <a class="navbar-brand fw-bold" href="#">
+                <span class="brand-text">Nour Amer</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
-          </div>
-
-
-          <div class="col-sm-12 col-md-6 col-lg-6 ">
-              <img src="imgs/hand-drawn-flat-design-api-illustration_23-2149365021-removebg-preview.png" class="img-fluid" alt="">
-          </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="hero-content">
+                        <div class="hero-badge mb-4">
+                            <span>👋 Hello, I'm</span>
+                        </div>
+                        <h1 class="hero-title mb-4">
+                            <span class="text-gradient">Nour Amer</span>
+                        </h1>
+                        <h2 class="hero-subtitle mb-4">Frontend Developer</h2>
+                        <p class="hero-description mb-5">
+                            Passionate frontend developer specializing in React and Next.js. 
+                            I create responsive, user-friendly web applications with modern technologies 
+                            and clean, maintainable code.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-rocket me-2"></i>View My Work
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-envelope me-2"></i>Get In Touch
+                            </a>
+                        </div>
+                        <div class="hero-stats mt-5">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h3>8+</h3>
+                                        <p>Projects</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h3>2+</h3>
+                                        <p>Years Learning</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h3>100%</h3>
+                                        <p>Dedication</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="./imgs/me2.jpeg" alt="Nour Amer" class="profile-img">
+                            <div class="floating-elements">
+                                <div class="floating-element element-1">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="floating-element element-2">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="floating-element element-3">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="floating-element element-4">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
     </section>
 
-    <!--projects section  -->
-    <section class="py-5 projects" id="projects">
-      <h2 class="text-center heading-style">Projects</h2>
-      
-      <div class="container text-slide-in">
-        <div class="row gx-4 mb-5">
-          <div class="col-lg-3 mb-4 card-container">
-            <div class="card-design">
-           <a href="https://crud-system-ckn1.vercel.app/"><img src="imgs/cruds_resized.jpeg" class="img-fluid"></a>
-
-            </div> 
-            <p class="text-center mt-3 fs-4">CRUD management system.</p>
-          </div>
-          <div class="col-lg-3 mb-4 card-container">
-            <div class="card-design">
-              <a href="quiz-iota-blue.vercel.app"><img src="imgs/qu.jpg" class="img-fluid" alt=""></a>
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center mb-5">
+                        <span class="section-badge">About Me</span>
+                        <h2 class="section-title">Passionate About Creating Amazing Web Experiences</h2>
+                    </div>
+                </div>
             </div>
-            <p class="text-center mt-3 fs-4">Quiz App.</p>
-          </div>
-
-          <div class="col-lg-3 mb-4 card-container">
-            <div class="card-design">
-              <a href="https://github.com/Nour123amer/Shopping-website.git"> <img src="imgs/pexels-n-voitkevich-6214471 (1).jpg" class="img-fluid" alt=""></a>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="about-content">
+                        <h3 class="mb-4">Frontend Developer & Problem Solver</h3>
+                        <p class="mb-4">
+                            Fresh graduate from the Faculty of Management Technology and Information Systems, 
+                            specializing in frontend development with React and Next.js. I'm passionate about 
+                            creating responsive, intuitive user interfaces and converting Figma designs into 
+                            pixel-perfect web applications.
+                        </p>
+                        <div class="about-highlights mb-4">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span>Clean, modular, and reusable code</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span>Responsive design implementation</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span>RESTful API & GraphQL integration</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span>Team collaboration & best practices</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-download me-2"></i>Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="/placeholder.svg?height=400&width=400" alt="About illustration" class="img-fluid">
+                    </div>
+                </div>
             </div>
-            <p class="text-center mt-3 fs-4">Ecommerce website.</p>
-          </div>
-
-          <div class="col-lg-3 mb-4 card-container">
-            <div class="card-design">
-              <a href="https://hotel-booking-two-delta.vercel.app/"><img src="imgs/pexels-thorsten-technoman-109353-338504 (1).jpg" class="img-fluid" alt=""></a>
-            </div>
-            <p class="text-center mt-3 fs-4">Hotel Booking website.</p>
-          </div>
         </div>
-
-        <div class="row gx-4 mb-5">
-          <div class="col-lg-3 mb-4 card-container">
-            <div class="card-design">
-           <a href="https://github.com/Nour123amer/To-do-App.git"><img src="imgs/do-list-planning-icon-concept-600nw-739093225.webp" class="img-fluid"></a>
-
-            </div> 
-            <p class="text-center mt-3 fs-4">TO DO App.</p>
-          </div>
-          <div class="col-lg-3 mb-4 card-container">
-            <div class="card-design">
-              <a href="fresh-cart-weld-two.vercel.app"><img src="imgs/photo-1522204523234-8729aa6e3d5f.avif" class="img-fluid" alt=""></a>
-            </div>
-            <p class="text-center mt-3 fs-4">Fresh Cart website.</p>
-          </div>
-
-          <div class="col-lg-3 mb-4 card-container">
-            <div class="card-design">
-              <a href="https://github.com/Nour123amer/Elite-Estates.git"> <img src="imgs/es.avif" class="img-fluid" alt=""></a>
-            </div>
-            <p class="text-center mt-3 fs-4"> Elite-Estates website.</p>
-          </div>
-
-          <div class="col-lg-3 mb-4 card-container">
-            <div class="card-design">
-              <a href="https://nti-assignment5.vercel.app/"><img src="imgs/por.jpeg" class="img-fluid" alt=""></a>
-            </div>
-            <p class="text-center mt-3 fs-4">Portfolio website.</p>
-          </div>
-        </div>
-
-        
-      </div>
     </section>
 
-
-    <!-- Personal skills -->
-    <section id="skills mx-3">
-      <h2 class="text-center heading-style">Personal Skills</h2>
-      
-
-      <div class="container text-slide-in">
-        <div class="row d-flex mt-5 align-items-center">
-          <div class="col-sm-12  col-md-6 col-lg-4">
-            <div class=" left-shadow  mb-4 bg-white text-black p-3 rounded-3 m-4 skill">
-              <h3 class="text-black"> Problem Solving</h3>
-              <p  class="text-black">Have the ability to solve problems related to frontend field, dealing with restful API ,Graphql mutations and queries</p>
-             </div>
-          </div>
-
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class=" left-shadow  mb-4 bg-white text-black p-3 rounded-3 m-4 skill">
-              <h3 class="text-black">Learning Mindset</h3>
-              <p  class="text-black">Want to learn new programming languages that help me develop my level in both design and logic using typescript 
-                ,next js framework for better performance and to make websites SEO friendly 
-                ,using shadcn ui to reduce time in writing components and tailwind to help me making websites
-                 responsive in less time.</p>
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center mb-5">
+                        <span class="section-badge">Skills</span>
+                        <h2 class="section-title text-white">Technologies I Work With</h2>
+                    </div>
+                </div>
             </div>
-          </div>
-
-         <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class=" left-shadow  mb-4 bg-white text-black p-3 rounded-3 m-4 skill">
-            <h3 class="text-black">Attention to Detail</h3>
-            <p  class="text-black">As a frontend , i attention to small details to develop a websites that meet client needs.</p>
-          </div>
-         </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <h3 class="text-white mb-4">Technical Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React & Next.js</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript & TypeScript</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML & CSS</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Tailwind CSS & Bootstrap</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">RESTful API & GraphQL</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="text-white mb-4">Personal Skills</h3>
+                    <div class="personal-skills">
+                        <div class="personal-skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Problem Solving</h4>
+                            <p>Ability to solve complex frontend challenges, API integration, and GraphQL queries efficiently.</p>
+                        </div>
+                        <div class="personal-skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h4>Learning Mindset</h4>
+                            <p>Continuously learning new technologies like TypeScript, Next.js, and modern UI libraries.</p>
+                        </div>
+                        <div class="personal-skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h4>Attention to Detail</h4>
+                            <p>Focus on pixel-perfect implementations and creating websites that meet client requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-
-
-    <section class="team text-slide-in" id="team">
-      <h2 class="text-center heading-style">Team</h2>
-      <p class="text-center fs-3 fw-bold mb-4">
-        Section Title <span class="heading-span-style">Team work and Experience</span>
-
-      </p>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div >
-              <p class="text-center py-4 fs-3">I haved trained on Real estates website with a team ( UI / UX - Backend - Frontend)</p>
-   
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center mb-5">
+                        <span class="section-badge">Portfolio</span>
+                        <h2 class="section-title">Featured Projects</h2>
+                        <p class="section-description">Here are some of my recent projects that showcase my skills and experience</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div>
-                 <p class="text-center py-4 fs-3"> Now , i am training on a SAS (software as a service) project called Chatplugify mentored with a team leader and have a team of UI/UX , Backend developers , Frontend developers and content creators ,using jira for managemnt. </p>
-
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./imgs/cruds_resized.jpeg" alt="CRUD Management System" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://crud-system-ckn1.vercel.app/" class="btn btn-light btn-sm" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>CRUD Management System</h4>
+                            <p>A complete CRUD application with modern UI and efficient data management.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./imgs/qu.jpg" alt="Quiz Application" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Interactive Quiz App</h4>
+                            <p>An engaging quiz application with dynamic questions and real-time scoring.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./imgs/pexels-n-voitkevich-6214471 (1).jpg" alt="E-commerce Website" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/Nour123amer/Shopping-website.git" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>E-commerce Platform</h4>
+                            <p>Full-featured shopping website with cart functionality and responsive design.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./imgs/pexels-thorsten-technoman-109353-338504 (1).jpg" alt="Hotel Booking" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://hotel-booking-two-delta.vercel.app/" class="btn btn-light btn-sm" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Hotel Booking System</h4>
+                            <p>Modern hotel booking platform with search and reservation features.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./imgs/photo-1522204523234-8729aa6e3d5f.avif" alt="Fresh Cart" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Fresh Cart Website</h4>
+                            <p>Modern e-commerce solution with fresh UI and smooth user experience.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">GraphQL</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./imgs/pexels-binyaminmellish-106399.jpg" alt="Elite Estates" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-light btn-sm" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/Nour123amer/Elite-Estates.git" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Elite Estates</h4>
+                            <p>Real estate platform with property listings and advanced search functionality.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div>
-              <p class="text-center py-4 fs-3">Self learner , i have learned basics of programming and the web from youtube then i trained at Rout center as a frontend developer ,NTI Web designer trainer.</p>
-            </div>
-          </div>
         </div>
-      </div>
-      
     </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center mb-5">
+                        <span class="section-badge">Experience</span>
+                        <h2 class="section-title">My Journey & Team Experience</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="experience-card">
+                        <div class="experience-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Real Estate Team Project</h4>
+                        <p class="text-muted mb-3">Team Collaboration</p>
+                        <p>Worked with a multidisciplinary team including UI/UX designers, backend developers, and frontend developers on a real estate website project.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="experience-card">
+                        <div class="experience-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>Chatplugify SaaS Project</h4>
+                        <p class="text-muted mb-3">Current Training</p>
+                        <p>Currently training on a Software as a Service project with team leadership, using Jira for project management and collaborating with diverse team members.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="experience-card">
+                        <div class="experience-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Self-Learning & Training</h4>
+                        <p class="text-muted mb-3">Continuous Growth</p>
+                        <p>Self-taught programming fundamentals, trained at Route Academy as a frontend developer, and completed NTI Web Designer training program.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center mb-5">
+                        <span class="section-badge">Contact</span>
+                        <h2 class="section-title text-white">Let's Work Together</h2>
+                        <p class="section-description text-light">Ready to start your next project? Let's discuss how I can help bring your ideas to life.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 text-center mb-4">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h5 class="text-white">Location</h5>
+                        <p class="text-light">Cairo, Egypt<br>Nasr City</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center mb-4">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h5 class="text-white">Phone</h5>
+                        <p class="text-light">+02 1099574487</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center mb-4">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5 class="text-white">Email</h5>
+                        <p class="text-light">nouramer295@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="text-white bg-black py-5" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6 mb-3">
-            <div>
-              <h2> Nour Amer</h2>
-              <p>
-               Frontend developer (React - Next.js - Tailwind - Restful API - Graphql)
-              </p>
-              <div
-                class="col-sm-12 col-md-6 d-flex justify-content-between w-50"
-              >
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-              <a href="https://www.linkedin.com/in/nour-amer-923614211?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <i class="fa-brands fa-linkedin"></i>
-              </a> 
-              </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h3 class="text-white mb-3">Nour Amer</h3>
+                    <p class="text-light mb-4">Frontend Developer specializing in React, Next.js, and modern web technologies. Let's create something amazing together!</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/nour-amer-923614211" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">React Development</a></li>
+                        <li><a href="#">UI/UX Implementation</a></li>
+                        <li><a href="#">API Integration</a></li>
+                        <li><a href="#">Responsive Design</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
-
-          <div class="col-sm-12 col-md-6 col-lg-2 mb-3">
-            <h2 class="fs-5">Useful Links</h2>
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Terms of service</a></li>
-              <li><a href="">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-sm-12 col-md-6 col-lg-2 mb-3">
-            <h2 class="fs-5">Our Services</h2>
-            <ul>
-              <li><a href="">Web Design</a></li>
-              <li><a href="">Web Development</a></li>
-              <li><a href="">Product Management</a></li>
-            </ul>
-          </div>
-
-          <div class="col-sm-12 col-md-6 col-lg-2 mb-3">
-            <h2 class="fs-5">Contact Us</h2>
-            <ul>
-              <p>Egypt ,Cairo</p>
-              <p>Nasr city</p>
-              <p>Phone: +02 1099574487</p>
-              <p>Email: nouramer295@gmail.com</p>
-            </ul>
-          </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-light mb-0">© 2024 Nour Amer. All rights reserved. Designed with ❤️</p>
+                </div>
+            </div>
         </div>
-
-        <div class="row w-100 mx-auto text-center bg-dark py-3">
-          <p>© Copyright  All Rights Reserved</p>
-          <p>Designed by <span class="maincolor">Nour Amer</span></p>
-        </div>
-      </div>
     </footer>
 
-    <i class="fa-solid fa-arrow-up upbtn"></i>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-      crossorigin="anonymous"
-    ></script>
-    <script src="main.js"></script>
-  </body>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
